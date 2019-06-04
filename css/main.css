@@ -131,11 +131,29 @@ header #tsriala-1 {
 	    -ms-flex-align: center;
 	        align-items: center;
 	font-size: 16px;
+	margin: 0 50px;
 }
 
 #search-icon {
 	width: 18px;
 	margin: 0 16px 0 20px;
+}
+.relative{
+	position: relative;
+}
+.search{
+	border: 0;
+	background-color: transparent;
+	font-family: "SandroUniversal-Bold";
+	position: absolute;
+	top:0;
+	right:-250%;
+	display:none;
+	color:#5d5757;
+	outline: none;
+}
+.active{
+	display: block;
 }
 
 .menu-wrapper ul li:not(:last-child) {
@@ -260,7 +278,8 @@ footer .footer-shape-2 {
 #tsriala-2 {
 	width: 300px;
 	position: absolute;
-	bottom: -32px;
+	bottom: 0;
+	/* bottom: -32px; ფუტერის ქვემოთ თეთრ ხაზს ტოვებს */
 	right: 3%;
 }
 

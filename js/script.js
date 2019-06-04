@@ -12,3 +12,6 @@
 //
 //
 // }
+$(".photo").click(function () {
+    $(".search").toggleClass("active")
+});
