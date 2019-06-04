@@ -148,12 +148,16 @@ header #tsriala-1 {
 	position: absolute;
 	top:0;
 	right:-250%;
-	display:none;
+    opacity: 0; 
+	width:0px;
+	transition: opacity 0.5s ease-out;
+    overflow: hidden;
 	color:#5d5757;
 	outline: none;
 }
 .active{
-	display: block;
+	opacity: 1;
+    width:auto;
 }
 
 .menu-wrapper ul li:not(:last-child) {
