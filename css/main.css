@@ -27,6 +27,9 @@
 .vertical-middle {
 	vertical-align: middle;
 }
+.justify-space-between{
+	justify-content:space-between;
+}
 
 .flex-column {
 	-webkit-box-orient: vertical;
@@ -102,6 +105,13 @@ header #menu-shape-3 {
 	top: 115px;
 	left: 18%;
 	width: 61%;
+}
+header #menu-shape-3-sc{
+	position: absolute;
+	z-index: -3;
+	left:0;
+	height:800px;
+	width: 100%;
 }
 
 
@@ -200,6 +210,72 @@ header #tsriala-1 {
 	width: 48%;
 }
 
+.about {
+	font-family: "SandroUniversal-Regular";
+	background-repeat:no-repeat;
+}
+.about h1 {
+	text-align:center;
+	font-size:30px;
+	margin:80px 0;
+}
+.text-area{
+	font-size:16px;
+	margin: 0 150px;
+	line-height:19px;
+	text-align:left;
+}
+.gallery{
+	margin:300px 160px;
+	padding-top: 130px;
+	height:300px;
+}
+.gallery .photo-container{
+
+}
+
+.photo.first img{
+	width:410px;
+	position:absolute;
+	z-index:0;
+	left: 5%;
+}
+.photo.second img{
+	width:410px;
+	position:absolute;
+	z-index:0;
+	left: 25%;
+}
+.photo.third img{
+	width:410px;
+	position:absolute;
+	z-index:0;
+	right:25%;
+
+}
+.photo.fourth img{
+	width:410px;
+	position:absolute;
+	z-index:0;
+	right:5%;
+}
+.left{
+	position:absolute;
+	left:0;
+	width:auto;
+	height:64px;
+	top:30%;
+	z-index:12;
+}
+.right{
+	position:absolute;
+	right:0;
+	width:auto;
+	height:64px;
+	top:30%;
+	z-index:12;
+	transform: rotate(180deg)
+}
 .book-img {
 	width: 100%;
 }
@@ -408,3 +484,7 @@ footer #biblio-logo {
 
 
 /* #endregion */
+.z-index-1{
+	z-index:1;
+	width: 300px !important;
+}
