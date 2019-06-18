@@ -20,6 +20,9 @@
 
 	<link rel="stylesheet" href="css/reset.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -36,7 +39,7 @@
 			<a href="index.html"><img id="logo" src="images/logo.svg" alt="წიგნის სახელოსნო"></a>
 			<nav class="sandro-font-regular">
 				<ul class="flex">
-					<li><a href="">პროექტის შესახებ</a></li>
+					<li>პროექტის შესახებ</li>
 					<li><a href="">კონტაქტი</a></li>
 					<li><a href="">წიგნები</a></li>
 					<li class="relative"><img id="search-icon" class="vertical-middle photo" src="images/search-icon.svg" alt="search-icon"> <input type="text" placeholder="საპოვნელა" class="search"></li>
@@ -64,34 +67,20 @@
 				ინგლისურენოვანი 
 				თარგმანი.</div>
 			</section>
-			<section class="gallery relative">
-				<a href="" class="left"><img src="images/left.png" alt="left"></a>
+			<div class="gallery z-index-1">
 				<div class="photo-container">
-					<div class="photo first relative flex flex-align-center .vertical-middle">
-						<img src="images/layer-68.png" alt="bg">
-						<img src="images/Layer-72.png" alt="photo-1" class="z-index-1">
-					</div>
+						<img src="images/Layer-72.png" alt="photo-1">
 				</div>	
 				<div class="photo-container">
-					<div class="photo second relative flex flex-align-center .vertical-middle">
-						<img src="images/layer-67.png" alt="bg">
-						<img src="images/Layer-71.png" alt="photo-1" class="z-index-1">
-					</div>
+						<img src="images/Layer-71.png" alt="photo-1">
 				</div>	
 				<div class="photo-container">
-					<div class="photo third relative flex flex-align-center .vertical-middle">
-						<img src="images/layer-66.png" alt="bg">
-						<img src="images/Layer-70.png" alt="photo-1" class="z-index-1">
-					</div>
+						<img src="images/Layer-70.png" alt="photo-1">
+				</div>			
 				<div class="photo-container">	
-				<div class="photo-container">	
-					<div class="photo fourth relative flex flex-align-center .vertical-middle">
-						<img src="images/layer-65.png" alt="bg">
-						<img src="images/Layer-69.png" alt="photo-1" class="z-index-1">
-					</div>
-					<div class="photo-container">	
-					<a href="" class="right"><img src="images/left.png" alt="right"></a>
-			</section>
+						<img src="images/Layer-69.png" alt="photo-1">				
+				</div>
+			</div>	
     </main>
     		<!-- footer -->
 
@@ -108,14 +97,48 @@
 
 
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" -->
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <!-- <script type="text/javascript" src="js/gifffer.min.js"></script> -->
-    <script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 
-
-    
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.gallery').slick({
+			centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  adaptiveHeight: true,
+  autoplay: true,
+  autoplaySpeed: 430,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+			});
+		});
+	  </script>
 </body>
 
 
