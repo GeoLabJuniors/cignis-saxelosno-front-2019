@@ -227,55 +227,16 @@ header #tsriala-1 {
 }
 .gallery{
 	margin:300px 160px;
-	padding-top: 130px;
 	height:300px;
 }
-.gallery .photo-container{
+/* .gallery .photo-container{
+	width:200px;
+}
+.gallery .photo-container img{
+	width:100%;
+} */
 
-}
 
-.photo.first img{
-	width:410px;
-	position:absolute;
-	z-index:0;
-	left: 5%;
-}
-.photo.second img{
-	width:410px;
-	position:absolute;
-	z-index:0;
-	left: 25%;
-}
-.photo.third img{
-	width:410px;
-	position:absolute;
-	z-index:0;
-	right:25%;
-
-}
-.photo.fourth img{
-	width:410px;
-	position:absolute;
-	z-index:0;
-	right:5%;
-}
-.left{
-	position:absolute;
-	left:0;
-	width:auto;
-	height:64px;
-	top:30%;
-	z-index:12;
-}
-.right{
-	position:absolute;
-	right:0;
-	width:auto;
-	height:64px;
-	top:30%;
-	z-index:12;
-	transform: rotate(180deg)
-}
 .book-img {
 	width: 100%;
 }
@@ -486,5 +447,4 @@ footer #biblio-logo {
 /* #endregion */
 .z-index-1{
 	z-index:1;
-	width: 300px !important;
 }
