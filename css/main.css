@@ -110,8 +110,14 @@ header #menu-shape-3-sc{
 	position: absolute;
 	z-index: -3;
 	left:0;
-	height:800px;
+	height:1000px;
 	width: 100%;
+}
+header #menu-shape-4{
+	width:200px;
+	position: absolute;
+	top:760px;
+	right:100px;
 }
 
 
@@ -227,6 +233,7 @@ header #tsriala-1 {
 }
 .gallery{
 	margin:300px 160px;
+	margin-top:500px;
 	height:300px;
 }
 /* .gallery .photo-container{
