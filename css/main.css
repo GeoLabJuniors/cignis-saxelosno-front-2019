@@ -98,6 +98,14 @@ header #menu-shape-2 {
 	left: 5%;
 	width: 57%;
 }
+header #menu-shape-2-sc {
+	position: absolute;
+	z-index: -4;
+	top: 127px;
+	left: 0;
+	height:1000px;
+	width: 100%;
+}
 
 header #menu-shape-3 {
 	position: absolute;
@@ -182,8 +190,37 @@ header #tsriala-1 {
 
 /* #endregion */
 
+/* #region == BOOKS - catalogue */
+	.catalogue{
+		margin: 200px;
+		margin-bottom:350px;
+	}
+	.bottom.catalogue{
+		margin-bottom:135px;
+	}
+	.catalogue .featured-book {
+		width: 30%;
+		text-align:center;
+		
 
-
+	}
+	.catalogue .featured-book img{
+		width:240px;
+		height:auto;
+		margin-bottom:20px;
+	}
+	.switcher{
+		text-align:center;
+		margin-bottom:300px;
+	}
+	.switcher p a{
+		margin:0 10px;
+	}
+	.tsriala-in-footer{
+		position:absolute;
+		bottom:110px;
+	}
+	
 /* #region  == BOOKS - main page */
 
 .books-wrapper {
