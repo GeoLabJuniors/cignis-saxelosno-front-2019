@@ -15,7 +15,6 @@
 $(".photo").click(function () {
     $(".search").toggleClass("active")
 });
-
 $(document).ready(function(){
 		  $('.gallery').slick({
 			centerMode: true,
@@ -23,7 +22,7 @@ $(document).ready(function(){
   slidesToShow: 3,
   adaptiveHeight: true,
   autoplay: true,
-  autoplaySpeed: 430,
+  autoplaySpeed: 470,
   responsive: [
     {
       breakpoint: 768,

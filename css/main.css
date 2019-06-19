@@ -220,7 +220,61 @@ header #tsriala-1 {
 		position:absolute;
 		bottom:110px;
 	}
-	
+/* #endregion == books- catalogue */
+
+/* #region == BOOKS - contact */
+	.address{
+		margin:140px;
+		font-size:19px;
+		padding-bottom: 500px;
+	}
+	.adress-box{
+		width:520px;
+		height: auto;
+	}
+	.adress-box .cn-content{
+		position: absolute;
+		left: 0;
+		z-index:1;
+	}
+	.adress-box .cn-content p {
+		margin: 50px 80px;
+		display: flex;
+		justify-content: space-between;
+		padding:10 50px;
+		z-index:2; 
+	}
+	.adress-box .cn-content p img{
+		margin-right:100px;
+	}
+	#location{
+		width: 21.3px;
+		height:31.01px;
+	}
+	#phone{
+		width:17.07px;
+		height:28.45px;
+	}
+	#email {
+		width:25.2px;
+		height:19.32px;
+	}
+	#facebook{
+		width:14.42px;
+		height:30.19px;
+	}
+	.map{
+		width: 70%;
+		margin:15%;
+	}
+	.tsriala-rukaze{
+		position: absolute;
+		right:20%;
+		top:-20%;
+	}
+
+/* #endregion == BOOKS -contact */
+
 /* #region  == BOOKS - main page */
 
 .books-wrapper {
@@ -280,7 +334,9 @@ header #tsriala-1 {
 	top:10%;
 	left:20%;
 }
-
+.absolute{
+	position:absolute
+}
 
 .book-img {
 	width: 100%;
