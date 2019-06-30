@@ -231,6 +231,7 @@ header #tsriala-1 {
 	.adress-box{
 		width:520px;
 		height: auto;
+		padding-top: 150px;
 	}
 	.adress-box .cn-content{
 		position: absolute;
@@ -264,13 +265,21 @@ header #tsriala-1 {
 		height:30.19px;
 	}
 	.map{
+		width: 100%;
+		position: relative;
+		padding-bottom: 1000px;
+		
+	}
+	.map .ruka{
+		position:absolute;
 		width: 70%;
-		margin:15%;
+		left:50%;
+		transform: translateX(-50%);
 	}
 	.tsriala-rukaze{
 		position: absolute;
-		right:20%;
-		top:-20%;
+		right:30%;
+		top: -12.5%;
 	}
 
 /* #endregion == BOOKS -contact */
