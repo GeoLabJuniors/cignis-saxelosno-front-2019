@@ -15,6 +15,11 @@
 $(".photo").click(function () {
     $(".search").toggleClass("active")
 });
+$(".arrow-down").click(function () {
+  $(".arrow-down").toggleClass("rotate")
+  $(".hide").toggleClass("shown")
+  $(".text-hide").toggleClass("text-shown")
+});
 $(document).ready(function(){
 		  $('.gallery').slick({
 			centerMode: true,
