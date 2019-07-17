@@ -28,7 +28,9 @@
 	vertical-align: middle;
 }
 .justify-space-between{
-	justify-content:space-between;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between;
 }
 
 .flex-column {
@@ -174,6 +176,8 @@ header #tsriala-1 {
 	right:-250%;
     opacity: 0; 
 	width:0px;
+	-webkit-transition: opacity 0.5s ease-out;
+	-o-transition: opacity 0.5s ease-out;
 	transition: opacity 0.5s ease-out;
     overflow: hidden;
 	color:#5d5757;
@@ -187,6 +191,19 @@ header #tsriala-1 {
 .menu-wrapper ul li:not(:last-child) {
 	margin-right: 20px;
 }
+.navigacia li a {
+	color: #5d5757;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.navigacia li a:hover{
+	color: white;
+}
+.alredy{
+	color:white;
+}
+
 
 /* #endregion */
 
@@ -240,8 +257,12 @@ header #tsriala-1 {
 	}
 	.adress-box .cn-content p {
 		margin: 50px 80px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		padding:10 50px;
 		z-index:2; 
 	}
@@ -274,7 +295,9 @@ header #tsriala-1 {
 		position:absolute;
 		width: 70%;
 		left:50%;
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
 	}
 	.tsriala-rukaze{
 		position: absolute;
@@ -406,22 +429,30 @@ header #tsriala-1 {
 .center-position{
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 .filter div h3{
 	font-family: "SandroUniversal-Regular";
 	font-size: 30px;
 }
 .rotate{
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
 	left: 44%;
 }
 .hide{
 	width: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .text-hide{
 	font-size: 0px;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
 	transition: 0.8s;
 }
 .text-shown{
@@ -433,6 +464,8 @@ header #tsriala-1 {
 .arrow-down{
 	width: 40px;
 	height: 20px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .arrow-down img{
@@ -479,11 +512,15 @@ header #tsriala-1 {
 	bottom: 55px;
 	right: 15%;
 	letter-spacing: 15px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 
 }
 .num-switch a{
 	color: rgb(93, 87, 87);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
 }
 .num-switch a:hover{
